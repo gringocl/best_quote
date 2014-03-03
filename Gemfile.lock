@@ -1,8 +1,10 @@
 PATH
   remote: ../rulers
   specs:
-    rulers (0.0.4)
+    rulers (0.0.5)
       erubis
+      multi_json
+      psych
       rack
 
 GEM
@@ -19,6 +21,7 @@ GEM
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
     method_source (0.8.2)
+    multi_json (1.8.4)
     pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -28,6 +31,7 @@ GEM
     pry-stack_explorer (0.4.9.1)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
+    psych (2.0.2)
     rack (1.5.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.3)

@@ -40,4 +40,10 @@ class QuotesController < Rulers::Controller
     u = FileModel.save(attrs, id)
     render :quote, obj: u
   end
+
+  def show
+    @obj = FileModel.find(params["id"])
+    @ua = request.user_agent
+    render_response :quote
+  end
 end

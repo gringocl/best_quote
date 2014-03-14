@@ -25,3 +25,11 @@ mt.save!
 mt2 = MyTable.find mt["id"]
 
 puts "Title: #{mt2["title"]}"
+
+class Rulers::Model::SQLite
+  MyTable.schema.keys.each do |key|
+    define_method(key) { self[key.to_s] }
+  end
+end
+
+mt2 = MyTable.find mt.id
